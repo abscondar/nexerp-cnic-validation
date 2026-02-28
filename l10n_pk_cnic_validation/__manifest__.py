@@ -13,7 +13,7 @@
 
 Built for production environments and Odoo Apps Store distribution.
 """,
-    "version": "18.0.2.0.0",
+    "version": "19.0.2.0.0",
     "category": "Localization",
     "license": "LGPL-3",
     "author": "NexERP Labs",
