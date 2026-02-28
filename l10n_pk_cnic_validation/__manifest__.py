@@ -1,23 +1,25 @@
 {
-    "name": "Pakistan CNIC Validation & Duplicate Protection",
-    "summary": "CNIC format validation, auto-formatting and duplicate control for Pakistani contacts",
-    "description": """
-Professional CNIC validation module for Pakistani businesses using Odoo.
+    "name": "Pakistan CNIC Validation for Odoo",
+    "summary": "Enterprise-grade CNIC format validation, auto-formatting and duplicate prevention for Pakistani contacts.",
+    "description": """Enterprise-ready CNIC validation and compliance module for Odoo.
 
-✔ Enforces correct CNIC format (xxxxx-xxxxxxx-x)
-✔ Automatic formatting for 13-digit input
-✔ SQL-level duplicate protection
-✔ Validation on create and write
-✔ Company-level control to enable/disable validation
-✔ Optimized and migration-ready architecture
+✔ Automatic CNIC formatting (xxxxx-xxxxxxx-x)
+✔ Strict validation on create and write
+✔ SQL-level duplicate prevention
+✔ Optimized indexing
+✔ Company-level enable/disable toggle
+✔ Multi-version tested (17, 18, 19)
+✔ Migration-ready architecture
 
-Compatible with Odoo 17, 18 and 19.
+Built for production environments and Odoo Apps Store distribution.
 """,
     "version": "19.0.2.0.0",
-    "category": "Contacts",
+    "category": "Localization",
     "license": "LGPL-3",
     "author": "NexERP Labs",
     "website": "https://github.com/abscondar",
+    "price": 49.0,
+    "currency": "USD",
     "depends": ["base", "contacts"],
     "data": [
         "security/ir.model.access.csv",
