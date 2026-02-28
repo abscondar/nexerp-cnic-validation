@@ -13,7 +13,7 @@ Professional CNIC validation module for Pakistani businesses using Odoo.
 
 Compatible with Odoo 17, 18 and 19.
 """,
-    "version": "17.0.2.0.0",
+    "version": "19.0.2.0.0",
     "category": "Contacts",
     "license": "LGPL-3",
     "author": "NexERP Labs",
