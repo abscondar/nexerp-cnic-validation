@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_cnic" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.cnic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="cnic_field_enabled" invisible="1"/>
+                <field
+                    name="cnic"
+                    placeholder="12345-1234567-1"
+                    help="Enter valid Pakistani CNIC (Format: 12345-1234567-1)"
+                    invisible="not cnic_field_enabled"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_config_settings_view_form_inherit_cnic_validation" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.cnic.validation</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='general_settings']" position="inside">
+                <block title="CNIC Validation (Pakistan)" name="cnic_validation_setting_container" groups="base.group_system">
+                    <setting
+                        id="cnic_field_enabled_setting"
+                        string="Enable CNIC Field"
+                        company_dependent="1"
+                        help="Show CNIC field on contacts for the selected company."
+                    >
+                        <field name="cnic_field_enabled"/>
+                    </setting>
+                    <setting
+                        id="cnic_validation_enabled_setting"
+                        string="Enable CNIC Validation"
+                        company_dependent="1"
+                        help="Enable CNIC format and uniqueness validation for the selected company."
+                    >
+                        <field name="cnic_validation_enabled"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>
