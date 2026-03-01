@@ -1,8 +1,7 @@
 {
-
-"summary": "CNIC format validation, auto-formatting & duplicate prevention for Pakistani contacts",
-"description": """
-Enterprise-ready CNIC validation and compliance module for Odoo (Community & Enterprise).
+    "summary": "CNIC format validation, auto-formatting & duplicate prevention for Pakistani contacts",
+    "description": """
+    Enterprise-ready CNIC validation and compliance module for Odoo (Community & Enterprise).
 
 Key features:
 - CNIC pattern validation (xxxxx-xxxxxxx-x)
@@ -35,6 +34,9 @@ Built for production Odoo deployments and Odoo Apps Store distribution.
             "l10n_pk_cnic_validation/static/src/js/cnic_format.js",
         ],
     },
+    "images": [
+        "static/description/banner.png",
+    ],
     "installable": True,
     "application": False,
 }
