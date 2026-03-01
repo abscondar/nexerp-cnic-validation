@@ -33,6 +33,9 @@ Built for production Odoo deployments and Odoo Apps Store distribution.
             "l10n_pk_cnic_validation/static/src/js/cnic_format.js",
         ],
     },
+    "images": [
+       "static/description/banner.png",
+    ],
     "installable": True,
     "application": False,
 }
